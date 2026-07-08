@@ -26,13 +26,17 @@ int main(void)
     printf("Addition of A =%d And b=%d gives %d.\n", a, b, result);
 
     result= a - b;
-    printf("substraction of A = %d and b = %d gives %d.\n", a, b, result);
+    printf("Substraction of A = %d and B = %d gives %d.\n", a, b, result);
 
     result = a*b;
-    printf("multiplication of A= %d and b=%d gives quotient %d.\n", a, b, result);
+    printf("Multiplication of A= %d and B=%d gives %d.\n", a, b, result);
+
+    result = a / b;
+    printf("Division of A=%d and B=%d gives Quotient %d.\n", a, b, result);
 
     result = a % b;
-    printf("division of A=%d and B=%d gives reminder %d.\n", a, b, result);
+    printf("Division of A=%d and B=%d gives Reminder %d.\n", a, b, result);
+
 
     printf("\n\n");
 

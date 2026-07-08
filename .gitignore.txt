@@ -1,3 +1,6 @@
+*.sh 
+*.py
+*.bin
 *.obj
 *.exe
 .vscode
@@ -22,3 +25,5 @@ gradlew
 build/
 .idea/
 test/
+*.pdf
+*.bat

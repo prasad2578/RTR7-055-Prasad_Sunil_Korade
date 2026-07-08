@@ -22,7 +22,22 @@ int main(void)
     a+=b;//a=a+b
     printf("addition of A=%d and B=%d gives %d.\n", x, b, a);
 
-    // value of a altered in all above expresion is used here 
+    x = a;
+    a -= b; // a = a - b
+    printf("Subtraction Of A = %d And B = %d Gives %d.\n", x, b, a);
+  
+    x = a;
+    a *= b; // a = a * b
+    printf("Multiplication Of A = %d And B = %d Gives %d.\n", x, b, a);
 
-    
+    x = a;
+    a /= b; // a = a / b
+    printf("Division Of A = %d And B = %d Gives Quotient %d.\n", x, b, a);
+
+    x = a;
+    a %= b; // a = a % b
+    printf("Division Of A = %d And B = %d Gives Remainder %d.\n", x, b, a); 
+
+    printf("\n\n");
+    return(0); 
 }

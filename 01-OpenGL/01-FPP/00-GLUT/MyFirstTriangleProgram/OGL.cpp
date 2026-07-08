@@ -53,11 +53,6 @@ void resize(int width, int height)
 void display(void)
 {
 	// code
-	float xPosition = 0.16f;
-	float yPosition = 0.94f;
-	float width = 0.715f;
-	float height = 0.94f;
-
 	glClear(GL_COLOR_BUFFER_BIT);
 
 	glMatrixMode(GL_MODELVIEW);
@@ -66,7 +61,7 @@ void display(void)
 	glBegin(GL_TRIANGLES);
 	glColor3f(1.0f, 0.0f, 0.0f);
 	glVertex3f(0.0f, 1.0f, 0.0f);
-
+	
 	glColor3f(0.0f, 1.0f, 0.0f);
 	glVertex3f(-1.0f, -1.0f, 0.0f);
 
