@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+=======
+*.sh 
+*.py
+*.bin
+>>>>>>> 4487177be54066a4210e1d569a67fa72fea267dc
 *.obj
 *.exe
 .vscode
@@ -21,4 +27,10 @@ res
 gradlew
 build/
 .idea/
+<<<<<<< HEAD
 test/
+=======
+test/
+*.pdf
+*.bat
+>>>>>>> 4487177be54066a4210e1d569a67fa72fea267dc
