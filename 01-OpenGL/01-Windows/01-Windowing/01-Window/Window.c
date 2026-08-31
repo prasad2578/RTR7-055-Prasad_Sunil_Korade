@@ -2,6 +2,12 @@
 
 #include<windows.h>
 
+//MACROS
+#define WIN_WIDTH 800
+#define WIN_HEIGHT 600
+
+
+
 
 //Global function declaration 
 
@@ -35,14 +41,20 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,LPSTR lpsCmdLine
     //register above WNDCLASS 
     RegisterClassEx(&wndclass);
 
+    //cENTERING
+    int ScreenWidth = GetSystemMetrics(SM_CXSCREEN);
+    int ScreenHeight = GetSystemMetrics(SM_CYSCREEN);
+
+
+
     //create the window 
     hwnd = CreateWindow(szAppName,
                         TEXT("My First RTR7 Window Program: Prasad Sunil Korade"),
                         WS_OVERLAPPEDWINDOW,
-                        CW_USEDEFAULT,
-                        CW_USEDEFAULT,
-                        CW_USEDEFAULT,
-                        CW_USEDEFAULT,
+                        ScreenWidth/2-WIN_WIDTH/2,
+                        ScreenHeight/2-WIN_HEIGHT/2,
+                        WIN_WIDTH,
+                        WIN_HEIGHT,
                         NULL,
                         NULL,
                         hInstance,
@@ -55,7 +67,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,LPSTR lpsCmdLine
     UpdateWindow(hwnd);
 
     //message loop 
-    while (GetMessage(&msg, NULL, 0, 0));
+    while (GetMessage(&msg, NULL, 0, 0))
     {
         TranslateMessage(&msg);
         DispatchMessage(&msg);

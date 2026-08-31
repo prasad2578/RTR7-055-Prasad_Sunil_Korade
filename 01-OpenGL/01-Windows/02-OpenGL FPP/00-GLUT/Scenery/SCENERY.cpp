@@ -17,7 +17,7 @@ int main(int argc, char* argv[])
 	glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGBA);
 	glutInitWindowSize(800, 600);
 	glutInitWindowPosition(100, 100);
-	glutCreateWindow("My First RTR7 Program: Dhananjay Gulab Thorat");
+	glutCreateWindow("SCENERY");
 
 	initialize();
 
@@ -58,20 +58,9 @@ void display(void)
 	glMatrixMode(GL_MODELVIEW);
 	glLoadIdentity();
 
-	glBegin(GL_POLYGON);
-	glColor3f(1.0f, 0.44f, 0.0f);
-	glVertex2f(-1.0f, 1.0f);
-	glVertex2f(1.0f, 1.0f);
+	//this is sky 
+	
 
-	glColor3f(0.29f, 0.35f, 1.0f);
-	glVertex2f(1.0f, 0.05f);
-
-	glColor3f(1.0f, 0.64f, 0.0f);
-	glVertex2f(-1.0f, 0.25f);
-	glVertex2f(1.0f, 0.25f);
-
-	glColor3f(0.29f, 0.35f, 1.0f);
-	glVertex2f(-1.0f, 0.05f);
 
 
 
@@ -82,6 +71,10 @@ void display(void)
 	glutSwapBuffers();
 
 
+}
+void PK_Circle(void)
+{
+	
 }
 
 void keyboard(unsigned char key, int x, int y)
