@@ -1,43 +1,9 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-*.sh 
-*.py
-*.bin
->>>>>>> 4487177be54066a4210e1d569a67fa72fea267dc
->>>>>>> 504bf75d0aa577530808ab44b87fe2de6392202a
-*.obj
+# Ignore compiled files
 *.exe
-.vscode
-.vs/
-*.res
-Log.txt
-!PDFs/*.pdf
-intermediates
-*.lib
-!Sphere.lib
-*.exp
-*.o
-OGL.exe
-freeglut-*
-*\.gradle
-res
-*.prop*
-*.jar
-*.toml
-*.pro
-gradlew
-build/
-.idea/
-<<<<<<< HEAD
-test/
-=======
-<<<<<<< HEAD
-test/
-=======
-test/
-*.pdf
-*.bat
->>>>>>> 4487177be54066a4210e1d569a67fa72fea267dc
->>>>>>> 504bf75d0aa577530808ab44b87fe2de6392202a
+*.obj
+*.pdb
+*.dll
+
+# Ignore build folders
+/build/
+/out/
